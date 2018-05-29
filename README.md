@@ -3,6 +3,8 @@
 scico
 =====
 
+[![Travis-CI Build Status](https://travis-ci.org/thomasp85/scico.svg?branch=master)](https://travis-ci.org/thomasp85/scico) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/thomasp85/scico?branch=master&svg=true)](https://ci.appveyor.com/project/thomasp85/scico) [![CRAN\_Release\_Badge](http://www.r-pkg.org/badges/version-ago/scico)](https://CRAN.R-project.org/package=scico) [![CRAN\_Download\_Badge](http://cranlogs.r-pkg.org/badges/scico)](https://CRAN.R-project.org/package=scico)
+
 This is a small package to provide access to the colour palettes developed by Fabio Crameri and published at <http://www.fabiocrameri.ch/colourmaps.php>. It uses more or less the same api as [`viridis`](https://github.com/sjmgarnier/viridis) and provides scales for [`ggplot2`](https://github.com/tidyverse/ggplot2) without requiring `ggplot2` to be installed.
 
 Installation
