@@ -14,6 +14,7 @@ Description: This is a simple package providing access to the perceptually
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Depends: R (>= 2.10)
 Imports:
     grDevices
 Suggests:
@@ -21,4 +22,4 @@ Suggests:
 URL: https://github.com/thomasp85/scico
 BugReports: https://github.com/thomasp85/scico/issues
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 6.0.1
+RoxygenNote: 6.0.1.9000

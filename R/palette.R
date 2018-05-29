@@ -31,7 +31,7 @@
 #' scico(15, direction = -1)
 #' 
 #' # Take a subset of a palette
-#' scico(15, start = 0.3, end = 0.6, palette = 'berlin')
+#' scico(15, begin = 0.3, end = 0.6, palette = 'berlin')
 #' 
 scico <- function(n, alpha = NULL, begin = 0, end = 1, direction = 1, palette = "bilbao") {
   if (begin < 0 | begin > 1 | end < 0 | end > 1) {
@@ -90,6 +90,7 @@ scico_palette_data <- function(palette) {
 #' 
 #' 
 #' @importFrom grDevices n2mfrow
+#' @importFrom graphics image par
 #' @export
 #' 
 #' @examples 
