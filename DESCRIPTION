@@ -1,0 +1,24 @@
+Package: scico
+Title: Palettes for R based on the Scientific Colour-Maps
+Version: 0.0.1
+Date: 2018-05-29
+Authors@R: c(
+    person("Thomas Lin", "Pedersen", email = "thomasp85@gmail.com", role = c("aut", "cre")),
+    person("Fabio", "Crameri", role = c("aut")))
+Maintainer: Thomas Lin Pedersen <thomasp85@gmail.com>
+Description: This is a simple package providing access to the perceptually
+    uniform and colour-blindness friendly palettes developed by Fabio Crameri
+    and released under the "Scientific Colour-Maps" moniker. The package
+    contains 17 different palettes and includes both diverging and sequential
+    types.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports:
+    grDevices
+Suggests:
+    ggplot2
+URL: https://github.com/thomasp85/scico
+BugReports: https://github.com/thomasp85/scico/issues
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 6.0.1
