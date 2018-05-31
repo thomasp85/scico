@@ -1,12 +1,14 @@
 Package: scico
-Title: Palettes for R based on the Scientific Colour-Maps
-Version: 0.0.1
-Date: 2018-05-29
+Title: Colour Palettes Based on the Scientific Colour-Maps
+Version: 1.0.0
+Date: 2018-05-30
 Authors@R: c(
     person("Thomas Lin", "Pedersen", email = "thomasp85@gmail.com", role = c("aut", "cre")),
     person("Fabio", "Crameri", role = c("aut")))
 Maintainer: Thomas Lin Pedersen <thomasp85@gmail.com>
-Description: This is a simple package providing access to the perceptually
+Description: Colour choice in information visualisation is important in order to
+    avoid being mislead by inherent bias in the used colour palette. The 'scico'
+    package provides access to the perceptually
     uniform and colour-blindness friendly palettes developed by Fabio Crameri
     and released under the "Scientific Colour-Maps" moniker. The package
     contains 17 different palettes and includes both diverging and sequential

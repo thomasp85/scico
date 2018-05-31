@@ -10,7 +10,7 @@ This is a small package to provide access to the colour palettes developed by Fa
 Installation
 ------------
 
-`scico` is not available on CRAN yet but can be installed from github
+`scico` can be installed from CRAN with `install.packages('scico')`. If you want the development version then install directly from GitHub:
 
 ``` r
 # install.packages("devtools")
