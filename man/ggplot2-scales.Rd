@@ -5,20 +5,32 @@
 \alias{scale_colour_scico}
 \alias{scale_color_scico}
 \alias{scale_fill_scico}
+\alias{scale_colour_scico_d}
+\alias{scale_color_scico_d}
+\alias{scale_fill_scico_d}
 \title{Scales to use for ggplot2}
 \usage{
-scale_colour_scico(..., alpha = NULL, begin = 0, end = 1, direction = 1,
-  palette = "bilbao")
+scale_colour_scico(..., alpha = NULL, begin = 0, end = 1,
+  direction = 1, palette = "bilbao")
 
-scale_color_scico(..., alpha = NULL, begin = 0, end = 1, direction = 1,
-  palette = "bilbao")
+scale_color_scico(..., alpha = NULL, begin = 0, end = 1,
+  direction = 1, palette = "bilbao")
 
-scale_fill_scico(..., alpha = NULL, begin = 0, end = 1, direction = 1,
-  palette = "bilbao")
+scale_fill_scico(..., alpha = NULL, begin = 0, end = 1,
+  direction = 1, palette = "bilbao")
+
+scale_colour_scico_d(..., alpha = 1, begin = 0, end = 1,
+  direction = 1, palette = "batlow", aesthetics = "colour")
+
+scale_color_scico_d(..., alpha = 1, begin = 0, end = 1,
+  direction = 1, palette = "batlow", aesthetics = "colour")
+
+scale_fill_scico_d(..., alpha = 1, begin = 0, end = 1,
+  direction = 1, palette = "batlow", aesthetics = "fill")
 }
 \arguments{
-\item{...}{Arguments to pass on to \code{ggplot2::scale_colour_gradientn()} or
-\code{ggplot2::scale_fill_gradientn()}}
+\item{...}{Arguments to pass on to \code{ggplot2::scale_colour_gradientn()},
+\code{ggplot2::scale_fill_gradientn()}, \code{ggplot2::ggplot2::discrete_scale()}}
 
 \item{alpha}{The opacity of the generated colours. If specified rgba values
 will be generated. The default (\code{NULL}) will generate rgb values which
@@ -34,9 +46,15 @@ Defaults to \code{0} and \code{1} respectively}
 
 \item{palette}{The name of the palette to sample from. See
 \code{\link[=scico_palette_names]{scico_palette_names()}} for a list of possible names}
+
+\item{aesthetics}{Character string or vector of character strings listing the
+name(s) of the aesthetic(s) that this scale works with. This can be useful,
+for example, to apply colour settings to the colour and fill aesthetics at
+the same time, via aesthetics = c("colour", "fill").}
 }
 \value{
-A \code{ScaleContinuous} object that can be added to a \code{ggplot} object
+A \code{ScaleContinuous} or \code{ScaleDiscrete} object that can be added to a
+\code{ggplot} object
 }
 \description{
 These functions provide the option to use the scico palettes along with the
@@ -54,6 +72,12 @@ if (require('ggplot2')) {
   ggplot(volcano, aes(x = x, y = y, fill = height)) + 
     geom_raster() + 
     scale_fill_scico(palette = 'tokyo') 
+    
+  ggplot(iris, aes(x=Petal.Width, y=Petal.Length)) +
+    geom_point(aes(color=Species), size=10) + 
+    scale_colour_scico_d() 
 }
+
+
 
 }
