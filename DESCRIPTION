@@ -20,8 +20,10 @@ Depends: R (>= 2.10)
 Imports:
     grDevices
 Suggests:
-    ggplot2
+    ggplot2,
+    testthat,
+    dplyr
 URL: https://github.com/thomasp85/scico
 BugReports: https://github.com/thomasp85/scico/issues
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 6.0.1.9000
+RoxygenNote: 6.1.0
