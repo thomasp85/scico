@@ -1,6 +1,6 @@
 Package: scico
 Title: Colour Palettes Based on the Scientific Colour-Maps
-Version: 1.0.0
+Version: 1.0.0.9000
 Date: 2018-05-30
 Authors@R: c(
     person("Thomas Lin", "Pedersen", email = "thomasp85@gmail.com", role = c("aut", "cre")),
