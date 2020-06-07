@@ -6,7 +6,7 @@
 \alias{_PACKAGE}
 \title{scico: Colour Palettes Based on the Scientific Colour-Maps}
 \description{
-\if{html}{\figure{logo.png}{options: align='right'}}
+\if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
 
 Colour choice in information visualisation is important in order to
     avoid being mislead by inherent bias in the used colour palette. The 'scico'
@@ -24,7 +24,7 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: Thomas Lin Pedersen \email{thomasp85@gmail.com}
+\strong{Maintainer}: Thomas Lin Pedersen \email{thomasp85@gmail.com} (\href{https://orcid.org/0000-0002-5147-4711}{ORCID})
 
 Authors:
 \itemize{

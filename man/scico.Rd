@@ -4,8 +4,7 @@
 \alias{scico}
 \title{Scientific colour map palettes}
 \usage{
-scico(n, alpha = NULL, begin = 0, end = 1, direction = 1,
-  palette = "bilbao")
+scico(n, alpha = NULL, begin = 0, end = 1, direction = 1, palette = "bilbao")
 }
 \arguments{
 \item{n}{The number of colours to generate for the palette}

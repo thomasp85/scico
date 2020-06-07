@@ -10,27 +10,66 @@
 \alias{scale_fill_scico_d}
 \title{Scales to use for ggplot2}
 \usage{
-scale_colour_scico(..., alpha = NULL, begin = 0, end = 1,
-  direction = 1, palette = "bilbao")
+scale_colour_scico(
+  ...,
+  alpha = NULL,
+  begin = 0,
+  end = 1,
+  direction = 1,
+  palette = "bilbao"
+)
 
-scale_color_scico(..., alpha = NULL, begin = 0, end = 1,
-  direction = 1, palette = "bilbao")
+scale_color_scico(
+  ...,
+  alpha = NULL,
+  begin = 0,
+  end = 1,
+  direction = 1,
+  palette = "bilbao"
+)
 
-scale_fill_scico(..., alpha = NULL, begin = 0, end = 1,
-  direction = 1, palette = "bilbao")
+scale_fill_scico(
+  ...,
+  alpha = NULL,
+  begin = 0,
+  end = 1,
+  direction = 1,
+  palette = "bilbao"
+)
 
-scale_colour_scico_d(..., alpha = 1, begin = 0, end = 1,
-  direction = 1, palette = "batlow", aesthetics = "colour")
+scale_colour_scico_d(
+  ...,
+  alpha = 1,
+  begin = 0,
+  end = 1,
+  direction = 1,
+  palette = "batlow",
+  aesthetics = "colour"
+)
 
-scale_color_scico_d(..., alpha = 1, begin = 0, end = 1,
-  direction = 1, palette = "batlow", aesthetics = "colour")
+scale_color_scico_d(
+  ...,
+  alpha = 1,
+  begin = 0,
+  end = 1,
+  direction = 1,
+  palette = "batlow",
+  aesthetics = "colour"
+)
 
-scale_fill_scico_d(..., alpha = 1, begin = 0, end = 1,
-  direction = 1, palette = "batlow", aesthetics = "fill")
+scale_fill_scico_d(
+  ...,
+  alpha = 1,
+  begin = 0,
+  end = 1,
+  direction = 1,
+  palette = "batlow",
+  aesthetics = "fill"
+)
 }
 \arguments{
 \item{...}{Arguments to pass on to \code{ggplot2::scale_colour_gradientn()},
-\code{ggplot2::scale_fill_gradientn()}, \code{ggplot2::ggplot2::discrete_scale()}}
+\code{ggplot2::scale_fill_gradientn()}, \verb{ggplot2::ggplot2::discrete_scale()}}
 
 \item{alpha}{The opacity of the generated colours. If specified rgba values
 will be generated. The default (\code{NULL}) will generate rgb values which

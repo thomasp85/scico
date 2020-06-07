@@ -25,4 +25,4 @@ Suggests:
 URL: https://github.com/thomasp85/scico
 BugReports: https://github.com/thomasp85/scico/issues
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 6.1.1
+RoxygenNote: 7.1.0
