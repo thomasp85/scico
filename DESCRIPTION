@@ -1,6 +1,6 @@
 Package: scico
 Title: Colour Palettes Based on the Scientific Colour-Maps
-Version: 1.2.0
+Version: 1.2.0.9000
 Authors@R: c(
     person("Thomas Lin", "Pedersen", email = "thomasp85@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-5147-4711")),
     person("Fabio", "Crameri", role = c("aut")))

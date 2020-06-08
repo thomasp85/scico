@@ -1,3 +1,5 @@
+# scico (development version)
+
 # scico 1.2.0
 
 * Added cyclic colour palettes
