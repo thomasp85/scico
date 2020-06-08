@@ -4,3 +4,4 @@ README.Rmd
 ^\.travis\.yml$
 ^appveyor\.yml$
 ^CRAN-RELEASE$
+^cran-comments\.md$
