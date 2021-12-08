@@ -89,6 +89,9 @@ Defaults to \code{0} and \code{1} respectively}
 \item{palette}{The name of the palette to sample from. See
 \code{\link[=scico_palette_names]{scico_palette_names()}} for a list of possible names}
 
+\item{midpoint}{A midpoint to center the scale on, used primarily for
+diverging and multisequential scales}
+
 \item{aesthetics}{Character string or vector of character strings listing the
 name(s) of the aesthetic(s) that this scale works with. This can be useful,
 for example, to apply colour settings to the colour and fill aesthetics at

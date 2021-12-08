@@ -9,6 +9,8 @@
 #'   name(s) of the aesthetic(s) that this scale works with. This can be useful,
 #'   for example, to apply colour settings to the colour and fill aesthetics at
 #'   the same time, via aesthetics = c("colour", "fill").
+#' @param midpoint A midpoint to center the scale on, used primarily for 
+#'   diverging and multisequential scales
 #' @inheritParams scico
 #' 
 #' @return A `ScaleContinuous` or `ScaleDiscrete` object that can be added to a
