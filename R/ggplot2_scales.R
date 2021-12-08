@@ -16,7 +16,6 @@
 #'   
 #' @name ggplot2-scales
 #' @rdname ggplot2-scales
-#' @export
 #' 
 #' @examples 
 #' 
@@ -36,30 +35,43 @@
 #'     scale_colour_scico_d() 
 #' }
 #' 
-#' 
-#' 
+NULL
 
+# Copied from ggplot2
+#' @importFrom scales rescale_mid
+mid_rescaler <- function(mid) {
+  function(x, to = c(0, 1), from = range(x, na.rm = TRUE)) {
+    rescale_mid(x, to, from, mid)
+  }
+}
 
 # Continuous scales -------------------------------------------------------
 
-scale_colour_scico <- function(..., alpha = NULL, begin = 0, end = 1, direction = 1, palette = "bilbao") {
+#' @rdname ggplot2-scales
+#' @importFrom scales rescale
+#' @export
+#' 
+scale_colour_scico <- function(..., alpha = NULL, begin = 0, end = 1, direction = 1, palette = "bilbao", midpoint = NA) {
   if (!requireNamespace("ggplot2", quietly = TRUE)) {
     stop('ggplot2 is required for this functionality', call. = FALSE)
   }
-  ggplot2::scale_colour_gradientn(colours = scico(256, alpha, begin, end, direction, palette), ...)
+  rescaler <- if (is.na(midpoint)) rescale else mid_rescaler(midpoint)
+  ggplot2::scale_colour_gradientn(colours = scico(256, alpha, begin, end, direction, palette), ..., rescaler = rescaler)
 }
 #' @rdname ggplot2-scales
 #' @export
 #' 
 scale_color_scico <- scale_colour_scico
 #' @rdname ggplot2-scales
+#' @importFrom scales rescale
 #' @export
 #' 
-scale_fill_scico <- function(..., alpha = NULL, begin = 0, end = 1, direction = 1, palette = "bilbao") {
+scale_fill_scico <- function(..., alpha = NULL, begin = 0, end = 1, direction = 1, palette = "bilbao", midpoint = NA) {
   if (!requireNamespace("ggplot2", quietly = TRUE)) {
     stop('ggplot2 is required for this functionality', call. = FALSE)
   }
-  ggplot2::scale_fill_gradientn(colours = scico(256, alpha, begin, end, direction, palette), ...)
+  rescaler <- if (is.na(midpoint)) rescale else mid_rescaler(midpoint)
+  ggplot2::scale_fill_gradientn(colours = scico(256, alpha, begin, end, direction, palette), ..., rescaler = rescaler)
 }
 
 

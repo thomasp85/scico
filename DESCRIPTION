@@ -16,6 +16,7 @@ Encoding: UTF-8
 LazyData: true
 Depends: R (>= 2.10)
 Imports:
+    scales,
     grDevices
 Suggests:
     ggplot2,
@@ -25,3 +26,4 @@ Suggests:
 URL: https://github.com/thomasp85/scico
 BugReports: https://github.com/thomasp85/scico/issues
 Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2

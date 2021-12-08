@@ -16,7 +16,8 @@ scale_colour_scico(
   begin = 0,
   end = 1,
   direction = 1,
-  palette = "bilbao"
+  palette = "bilbao",
+  midpoint = NA
 )
 
 scale_color_scico(
@@ -25,7 +26,8 @@ scale_color_scico(
   begin = 0,
   end = 1,
   direction = 1,
-  palette = "bilbao"
+  palette = "bilbao",
+  midpoint = NA
 )
 
 scale_fill_scico(
@@ -34,7 +36,8 @@ scale_fill_scico(
   begin = 0,
   end = 1,
   direction = 1,
-  palette = "bilbao"
+  palette = "bilbao",
+  midpoint = NA
 )
 
 scale_colour_scico_d(
@@ -116,7 +119,5 @@ if (require('ggplot2')) {
     geom_point(aes(color=Species), size=10) + 
     scale_colour_scico_d() 
 }
-
-
 
 }

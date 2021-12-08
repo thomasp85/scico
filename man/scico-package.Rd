@@ -8,12 +8,7 @@
 \description{
 \if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
 
-Colour choice in information visualisation is important in order to
-    avoid being mislead by inherent bias in the used colour palette. The 'scico'
-    package provides access to the perceptually uniform and colour-blindness 
-    friendly palettes developed by Fabio Crameri and released under the 
-    "Scientific Colour-Maps" moniker. The package contains 24 different palettes 
-    and includes both diverging and sequential types.
+Colour choice in information visualisation is important in order to avoid being mislead by inherent bias in the used colour palette. The 'scico' package provides access to the perceptually uniform and colour-blindness friendly palettes developed by Fabio Crameri and released under the "Scientific Colour-Maps" moniker. The package contains 24 different palettes and includes both diverging and sequential types.
 }
 \seealso{
 Useful links:
