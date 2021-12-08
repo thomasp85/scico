@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>/404.html</loc>
+  </url>
+  <url>
+    <loc>/LICENSE-text.html</loc>
+  </url>
+  <url>
+    <loc>/authors.html</loc>
+  </url>
+  <url>
+    <loc>/index.html</loc>
+  </url>
+  <url>
+    <loc>/news/index.html</loc>
+  </url>
+  <url>
+    <loc>/reference/ggplot2-scales.html</loc>
+  </url>
+  <url>
+    <loc>/reference/index.html</loc>
+  </url>
+  <url>
+    <loc>/reference/scico-package.html</loc>
+  </url>
+  <url>
+    <loc>/reference/scico.html</loc>
+  </url>
+  <url>
+    <loc>/reference/scico_data.html</loc>
+  </url>
+  <url>
+    <loc>/reference/scico_palette_show.html</loc>
+  </url>
+</urlset>
