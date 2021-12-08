@@ -20,8 +20,8 @@ Imports:
 Suggests:
     ggplot2,
     testthat,
-    dplyr
+    dplyr,
+    covr
 URL: https://github.com/thomasp85/scico
 BugReports: https://github.com/thomasp85/scico/issues
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.0

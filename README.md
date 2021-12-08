@@ -3,12 +3,13 @@
 
 # scico <img src="man/figures/logo.png" align="right" />
 
-[![Travis-CI Build
-Status](https://travis-ci.org/thomasp85/scico.svg?branch=master)](https://travis-ci.org/thomasp85/scico)
-[![AppVeyor Build
-Status](https://ci.appveyor.com/api/projects/status/github/thomasp85/scico?branch=master&svg=true)](https://ci.appveyor.com/project/thomasp85/scico)
-[![CRAN\_Release\_Badge](http://www.r-pkg.org/badges/version-ago/scico)](https://CRAN.R-project.org/package=scico)
-[![CRAN\_Download\_Badge](http://cranlogs.r-pkg.org/badges/scico)](https://CRAN.R-project.org/package=scico)
+<!-- badges: start -->
+
+[![R-CMD-check](https://github.com/thomasp85/scico/workflows/R-CMD-check/badge.svg)](https://github.com/thomasp85/scico/actions)
+[![CRAN_Release_Badge](http://www.r-pkg.org/badges/version-ago/scico)](https://CRAN.R-project.org/package=scico)
+[![Codecov test
+coverage](https://codecov.io/gh/thomasp85/scico/branch/master/graph/badge.svg)](https://app.codecov.io/gh/thomasp85/scico?branch=master)
+<!-- badges: end -->
 
 This is a small package to provide access to the colour palettes
 developed by Fabio Crameri and published at
@@ -76,8 +77,8 @@ ggplot(volcano, aes(x = x, y = y, fill = height)) +
 
 ## References
 
-  - Crameri, Fabio. (2018, May 8). *Scientific colour maps (Version
+-   Crameri, Fabio. (2018, May 8). *Scientific colour maps (Version
     3.0.1)*. Zenodo. doi: 10.5281/zenodo.1243909
-  - Crameri, Fabio. (2018). *Geodynamic diagnostics, scientific
+-   Crameri, Fabio. (2018). *Geodynamic diagnostics, scientific
     visualisation and StagLab 3.0*. Geosci. Model Dev. Discuss. doi:
     10.5194/gmd-2017-328

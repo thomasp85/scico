@@ -5,3 +5,5 @@ README.Rmd
 ^appveyor\.yml$
 ^CRAN-RELEASE$
 ^cran-comments\.md$
+^codecov\.yml$
+^\.github$
