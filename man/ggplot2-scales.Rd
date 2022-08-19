@@ -78,10 +78,7 @@ scale_fill_scico_d(
 will be generated. The default (\code{NULL}) will generate rgb values which
 corresponds to \code{alpha = 1}}
 
-\item{begin}{The interval within the palette to sample colours from.
-Defaults to \code{0} and \code{1} respectively}
-
-\item{end}{The interval within the palette to sample colours from.
+\item{begin, end}{The interval within the palette to sample colours from.
 Defaults to \code{0} and \code{1} respectively}
 
 \item{direction}{Either \code{1} or \code{-1}. If \code{-1} the palette will be reversed}
