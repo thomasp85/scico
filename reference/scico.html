@@ -59,59 +59,70 @@ easily adapt to that.</p>
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu">scico</span><span class="op">(</span><span class="va">n</span>, alpha <span class="op">=</span> <span class="cn">NULL</span>, begin <span class="op">=</span> <span class="fl">0</span>, end <span class="op">=</span> <span class="fl">1</span>, direction <span class="op">=</span> <span class="fl">1</span>, palette <span class="op">=</span> <span class="st">"bilbao"</span><span class="op">)</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">scico</span><span class="op">(</span><span class="va">n</span>, alpha <span class="op">=</span> <span class="cn">NULL</span>, begin <span class="op">=</span> <span class="fl">0</span>, end <span class="op">=</span> <span class="fl">1</span>, direction <span class="op">=</span> <span class="fl">1</span>, palette <span class="op">=</span> <span class="st">"bilbao"</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div id="arguments">
     <h2>Arguments</h2>
     <dl><dt>n</dt>
 <dd><p>The number of colours to generate for the palette</p></dd>
+
+
 <dt>alpha</dt>
 <dd><p>The opacity of the generated colours. If specified rgba values
 will be generated. The default (<code>NULL</code>) will generate rgb values which
 corresponds to <code>alpha = 1</code></p></dd>
+
+
 <dt>begin, end</dt>
 <dd><p>The interval within the palette to sample colours from.
 Defaults to <code>0</code> and <code>1</code> respectively</p></dd>
+
+
 <dt>direction</dt>
 <dd><p>Either <code>1</code> or <code>-1</code>. If <code>-1</code> the palette will be reversed</p></dd>
+
+
 <dt>palette</dt>
 <dd><p>The name of the palette to sample from. See
 <code><a href="scico_data.html">scico_palette_names()</a></code> for a list of possible names</p></dd>
+
 </dl></div>
     <div id="value">
     <h2>Value</h2>
-    <p>A character vector of length <code>n</code> with hexencoded rgb(a) colour values</p>
+    
+
+<p>A character vector of length <code>n</code> with hexencoded rgb(a) colour values</p>
     </div>
     <div id="references">
     <h2>References</h2>
     <p><a href="http://www.fabiocrameri.ch/colourmaps.php" class="external-link">http://www.fabiocrameri.ch/colourmaps.php</a></p>
-<p>Crameri, Fabio. (2018, May 8). <em>Scientific colour maps (Version 3.0.1)</em>. Zenodo. doi: <a href="https://doi.org/10.5281/zenodo.1243909" class="external-link">10.5281/zenodo.1243909</a>
+<p>Crameri, Fabio. (2018, May 8). <em>Scientific colour maps (Version 3.0.1)</em>. Zenodo. <a href="https://doi.org/10.5281/zenodo.1243909" class="external-link">doi:10.5281/zenodo.1243909</a>
 
-Crameri, Fabio. (2018). <em>Geodynamic diagnostics, scientific visualisation and StagLab 3.0</em>. Geosci. Model Dev. Discuss. doi: <a href="https://doi.org/10.5194/gmd-2017-328" class="external-link">10.5194/gmd-2017-328</a></p>
+Crameri, Fabio. (2018). <em>Geodynamic diagnostics, scientific visualisation and StagLab 3.0</em>. Geosci. Model Dev. Discuss. <a href="https://doi.org/10.5194/gmd-2017-328" class="external-link">doi:10.5194/gmd-2017-328</a></p>
     </div>
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"></span>
-<span class="r-in"><span class="co"># Use the default palette</span></span>
-<span class="r-in"><span class="fu">scico</span><span class="op">(</span><span class="fl">15</span><span class="op">)</span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># Use the default palette</span></span></span>
+<span class="r-in"><span><span class="fu">scico</span><span class="op">(</span><span class="fl">15</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  [1] "#FFFFFF" "#E5E5E5" "#CECECB" "#C5C1B2" "#BDB699" "#B5AA7F" "#B09C6E"</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  [8] "#AB8B67" "#A57A5F" "#A06959" "#9C5651" "#8F4342" "#792C2C" "#631717"</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [15] "#4C0000"</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># Flip the direction</span></span>
-<span class="r-in"><span class="fu">scico</span><span class="op">(</span><span class="fl">15</span>, direction <span class="op">=</span> <span class="op">-</span><span class="fl">1</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># Flip the direction</span></span></span>
+<span class="r-in"><span><span class="fu">scico</span><span class="op">(</span><span class="fl">15</span>, direction <span class="op">=</span> <span class="op">-</span><span class="fl">1</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  [1] "#4C0000" "#631717" "#792C2C" "#8F4342" "#9C5651" "#A06959" "#A57A5F"</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  [8] "#AB8B67" "#B09C6E" "#B5AA7F" "#BDB699" "#C5C1B2" "#CECECB" "#E5E5E5"</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [15] "#FFFFFF"</span>
-<span class="r-in"></span>
-<span class="r-in"><span class="co"># Take a subset of a palette</span></span>
-<span class="r-in"><span class="fu">scico</span><span class="op">(</span><span class="fl">15</span>, begin <span class="op">=</span> <span class="fl">0.3</span>, end <span class="op">=</span> <span class="fl">0.6</span>, palette <span class="op">=</span> <span class="st">'berlin'</span><span class="op">)</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># Take a subset of a palette</span></span></span>
+<span class="r-in"><span><span class="fu">scico</span><span class="op">(</span><span class="fl">15</span>, begin <span class="op">=</span> <span class="fl">0.3</span>, end <span class="op">=</span> <span class="fl">0.6</span>, palette <span class="op">=</span> <span class="st">'berlin'</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  [1] "#1F5169" "#1C475C" "#183E50" "#153544" "#122C39" "#11242E" "#0F1C24"</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  [8] "#10161B" "#121113" "#160D0B" "#1C0B05" "#220C01" "#280D00" "#2F0E00"</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [15] "#371000"</span>
-<span class="r-in"></span>
+<span class="r-in"><span></span></span>
 </code></pre></div>
     </div>
   </div>
@@ -126,7 +137,7 @@ Crameri, Fabio. (2018). <em>Geodynamic diagnostics, scientific visualisation and
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.1.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.6.</p>
 </div>
 
       </footer></div>
