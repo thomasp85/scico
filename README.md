@@ -30,7 +30,7 @@ devtools::install_github("thomasp85/scico")
 
 ## Palettes
 
-`scico` provides 17 different palettes, all of which are perceptually
+`scico` provides 35 different palettes, all of which are perceptually
 uniform and colourblind safe. An overview can be had with the
 `scico_palette_show()` function:
 
