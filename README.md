@@ -79,7 +79,6 @@ ggplot(volcano, aes(x = x, y = y, fill = height)) +
 
 -   Crameri, Fabio. (2021, September 12). *Scientific colour maps (Version
     7.0.1)*. Zenodo. doi: 10.5281/zenodo.5501399   
-    
 -   Crameri, Fabio. (2018). *Geodynamic diagnostics, scientific
     visualisation and StagLab 3.0*. Geosci. Model Dev. Discuss. doi:
     10.5194/gmd-2017-328
