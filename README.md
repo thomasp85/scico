@@ -30,7 +30,7 @@ devtools::install_github("thomasp85/scico")
 
 ## Palettes
 
-`scico` provides 17 different palettes, all of which are perceptually
+`scico` provides 35 different palettes, all of which are perceptually
 uniform and colourblind safe. An overview can be had with the
 `scico_palette_show()` function:
 
@@ -77,8 +77,8 @@ ggplot(volcano, aes(x = x, y = y, fill = height)) +
 
 ## References
 
--   Crameri, Fabio. (2018, May 8). *Scientific colour maps (Version
-    3.0.1)*. Zenodo. doi: 10.5281/zenodo.1243909
+-   Crameri, Fabio. (2021, September 12). *Scientific colour maps (Version
+    7.0.1)*. Zenodo. doi: 10.5281/zenodo.5501399   
 -   Crameri, Fabio. (2018). *Geodynamic diagnostics, scientific
     visualisation and StagLab 3.0*. Geosci. Model Dev. Discuss. doi:
     10.5194/gmd-2017-328
