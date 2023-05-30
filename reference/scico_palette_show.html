@@ -55,13 +55,25 @@ available in the <code>scico</code> package</p>
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">scico_palette_show</span><span class="op">(</span>palettes <span class="op">=</span> <span class="fu"><a href="scico_data.html">scico_palette_names</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">scico_palette_show</span><span class="op">(</span></span>
+<span>  palettes <span class="op">=</span> <span class="fu"><a href="scico_data.html">scico_palette_names</a></span><span class="op">(</span><span class="va">categorical</span><span class="op">)</span>,</span>
+<span>  categorical <span class="op">=</span> <span class="cn">FALSE</span>,</span>
+<span>  n <span class="op">=</span> <span class="kw">if</span> <span class="op">(</span><span class="va">categorical</span><span class="op">)</span> <span class="fl">6</span> <span class="kw">else</span> <span class="fl">100</span></span>
+<span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div id="arguments">
     <h2>Arguments</h2>
     <dl><dt>palettes</dt>
 <dd><p>One or more palette names to show</p></dd>
+
+
+<dt>categorical</dt>
+<dd><p>Boolean. Should the categorical palettes be returned</p></dd>
+
+
+<dt>n</dt>
+<dd><p>How many colours should be shown</p></dd>
 
 </dl></div>
 
@@ -70,6 +82,8 @@ available in the <code>scico</code> package</p>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span></span></span>
 <span class="r-in"><span><span class="fu">scico_palette_show</span><span class="op">(</span><span class="op">)</span></span></span>
 <span class="r-plt img"><img src="scico_palette_show-1.png" alt="" width="700" height="433"></span>
+<span class="r-in"><span><span class="fu">scico_palette_show</span><span class="op">(</span>categorical <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></span>
+<span class="r-plt img"><img src="scico_palette_show-2.png" alt="" width="700" height="433"></span>
 <span class="r-in"><span></span></span>
 </code></pre></div>
     </div>
