@@ -6,11 +6,13 @@
 \alias{scico_palette_data}
 \title{Access raw palette data}
 \usage{
-scico_palette_names()
+scico_palette_names(categorical = FALSE)
 
-scico_palette_data(palette)
+scico_palette_data(palette, categorical = FALSE)
 }
 \arguments{
+\item{categorical}{Boolean. Should the categorical palettes be returned}
+
 \item{palette}{The name of the palette to fetch data for}
 }
 \description{

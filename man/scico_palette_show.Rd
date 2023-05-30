@@ -4,10 +4,18 @@
 \alias{scico_palette_show}
 \title{Show the different scico palettes}
 \usage{
-scico_palette_show(palettes = scico_palette_names())
+scico_palette_show(
+  palettes = scico_palette_names(categorical),
+  categorical = FALSE,
+  n = if (categorical) 6 else 100
+)
 }
 \arguments{
 \item{palettes}{One or more palette names to show}
+
+\item{categorical}{Boolean. Should the categorical palettes be returned}
+
+\item{n}{How many colours should be shown}
 }
 \description{
 This is a simple function to show a gradient of the different palettes
@@ -16,5 +24,6 @@ available in the \code{scico} package
 \examples{
 
 scico_palette_show()
+scico_palette_show(categorical = TRUE)
 
 }

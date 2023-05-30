@@ -4,7 +4,15 @@
 \alias{scico}
 \title{Scientific colour map palettes}
 \usage{
-scico(n, alpha = NULL, begin = 0, end = 1, direction = 1, palette = "bilbao")
+scico(
+  n,
+  alpha = NULL,
+  begin = 0,
+  end = 1,
+  direction = 1,
+  palette = "bilbao",
+  categorical = FALSE
+)
 }
 \arguments{
 \item{n}{The number of colours to generate for the palette}
@@ -20,6 +28,8 @@ Defaults to \code{0} and \code{1} respectively}
 
 \item{palette}{The name of the palette to sample from. See
 \code{\link[=scico_palette_names]{scico_palette_names()}} for a list of possible names}
+
+\item{categorical}{Boolean. Should the categorical palettes be returned}
 }
 \value{
 A character vector of length \code{n} with hexencoded rgb(a) colour values
@@ -45,6 +55,6 @@ scico(15, begin = 0.3, end = 0.6, palette = 'berlin')
 \references{
 \url{http://www.fabiocrameri.ch/colourmaps.php}
 
-Crameri, Fabio. (2018, May 8). \emph{Scientific colour maps (Version 3.0.1)}. Zenodo. \doi{10.5281/zenodo.1243909}
+Crameri, Fabio. (2021, September 12). \emph{Scientific colour maps (Version 7.0.1)}. Zenodo. \doi{10.5281/zenodo.5501399}
 Crameri, Fabio. (2018). \emph{Geodynamic diagnostics, scientific visualisation and StagLab 3.0}. Geosci. Model Dev. Discuss. \doi{10.5194/gmd-2017-328}
 }
