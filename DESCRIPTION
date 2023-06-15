@@ -9,8 +9,12 @@ Description: Colour choice in information visualisation is important in order to
     avoid being mislead by inherent bias in the used colour palette. The 'scico'
     package provides access to the perceptually uniform and colour-blindness 
     friendly palettes developed by Fabio Crameri and released under the 
-    "Scientific Colour-Maps" moniker. The package contains 24 different palettes 
-    and includes both diverging and sequential types.
+    "Scientific Colour-Maps" moniker. The package contains 39 different 
+    palettes in total. There are 21 sequential palettes that also include 
+    discrete and categorical variants. An additional 3 multi-sequential 
+    gradients, 10 diverging gradients, and 5 cyclic gradients are also included.
+    Those palettes also include discrete variants but only the sequential types
+    include categorical.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Depends: R (>= 2.10)
