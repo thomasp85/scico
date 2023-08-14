@@ -1,3 +1,5 @@
+# scico (development version)
+
 # scico 1.5.0
 
 * Update palettes to Scientific Color Maps 8.0
