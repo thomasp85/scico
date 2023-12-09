@@ -71,6 +71,17 @@ ggplot(volcano, aes(x = x, y = y, fill = height)) +
   scale_fill_scico(palette = 'davos') 
 ```
 
+It is straightforward to obtain a palette for categorical variables, similar to e.g. `batlowS`:
+
+```{r}
+set.seed(596)
+dsamp <- diamonds[sample(nrow(diamonds), 1000), ]
+(d <- ggplot(dsamp, aes(carat, price)) +
+  geom_point(aes(colour = clarity)))
+d + scale_colour_manual(values=scico(100, palette="batlow", categorical=TRUE))
+```
+
+
 ## References
 - Crameri, Fabio. (2018, May 8). *Scientific colour maps (Version 3.0.1)*. Zenodo. doi: 10.5281/zenodo.1243909
 - Crameri, Fabio. (2018). *Geodynamic diagnostics, scientific visualisation and StagLab 3.0*. Geosci. Model Dev. Discuss. doi: 10.5194/gmd-2017-328
